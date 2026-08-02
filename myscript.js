@@ -104,9 +104,6 @@ let count = 0;
 const el = document.getElementById("sara-arjun");
 
 function ChangeColor() {
-  //   for (let i = 0; i < colors.length; i++) {
-  //     el.style.color = colors[i];
-  //   }
   count = count + 1;
 
   el.style.color = colors[count];
@@ -114,4 +111,14 @@ function ChangeColor() {
   if (count === colors.length) {
     count = 0;
   }
+
+  el.style.color = colors[count];
+
+  // Scale up
+  el.style.transform = "scale(1.2)";
+
+  // Scale back down
+  setTimeout(() => {
+    el.style.transform = "scale(1)";
+  }, 200);
 }
