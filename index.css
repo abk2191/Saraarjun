@@ -15,9 +15,8 @@
 
 .alt-text {
   margin-top: 45px;
-  font-size: 12px;
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
+  font-size: 18px;
+  font-family: "Smooch Sans", sans-serif;
 }
 
 #sara-arjun {
@@ -50,6 +49,12 @@
 .sara-color-change-btn:active {
   transform: scale(0.95);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#sara-arjun {
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
 }
 
 body {
